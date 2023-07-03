@@ -62,7 +62,7 @@ const config: DocsThemeConfig = {
   banner: {
       key: 'Survival',
       text: (
-        <a href="https://wiki.spainrp.me/survival" target="_blank">
+        <a href="../Modalidades/Survival/Inicio" target="_blank">
           🎉 El servidor survival ya esta disponible. Mas informacion →
         </a>
       )
