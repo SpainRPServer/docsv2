@@ -1,0 +1,101 @@
+import { Tab, Tabs } from 'nextra-theme-docs'
+import { Steps } from 'nextra-theme-docs'
+import { Callout } from 'nextra/components'
+
+# Como instalar el modpack personalizado oficial?
+
+<Callout type="info" emoji="ℹ️">
+    El modpack esta disponible desde [modrinth](https://modrinth.com/modpack/spainrp)
+</Callout>
+
+
+## Como instalarlo
+
+Hay varias formas de instalar el modpack a continuacion se proporciona informacion para instalarlo con diferentes launchers. Si tienes alguna duda puedes preguntar por el discord
+
+## ¿Cómo juego un modpack?
+
+Actualmente, las formas más fáciles de jugar un modpack de Modrinth son a través de [ATLauncher](https://atlauncher.com), [MultiMC](https://multimc.org) o [Prism Launcher](https://prismlauncher.org).
+
+
+<Tabs items={['AT Launcher', 'MultiMC', 'Manual']}>
+  <Tab>
+  AT Launcher es un lanzador enfocado en la fácil integración de modpacks con varias plataformas diferentes.
+  Los paquetes de Modrinth se pueden instalar usando ATLauncher con tan solo tres clics. 
+  
+  <Steps>
+  ### Paso 1
+  Vaya a la pestaña "Paquetes" 
+  
+  ### Paso 2
+  Seleccione Modrinth a la izquierda 
+  
+  ### Paso 3
+  Busque SpainRP. Entonces, ¡juega!
+  
+  </Steps>
+  ![Búsqueda de ATLauncher](https://docs.modrinth.com/assets/images/atlauncherSearch-d68171dbb61d781b6c4d87e99b4aae64.png)
+  
+  > Si solo desea insertar una ID, slug o URL directamente, también puede hacerlo usando el botón "Agregar manualmente" en la parte superior derecha de la búsqueda.
+  
+  _Si tiene un enlace directo a un paquete de Modrinth, también tiene la opción de importarlo usando el botón "Importar" en la pestaña "Instancias"._
+  
+  ![Importación de ATLauncher](https://docs.modrinth.com/assets/images/atlauncherImport-ad3ecfc146d2bb72e9813b0d8e14c880.png)
+  </Tab>
+  
+  <Tab>
+  MultiMC y Prism son ambos launchers enfocados en administrar de manera eficiente múltiples instancias separadas. 
+  Las instrucciones de instalación para cada uno son idénticas.
+  
+  <Steps>
+  ### Paso 1
+  Los paquetes de Modrinth se pueden instalar usando el botón "Agregar instancia". 
+
+  ### Paso 2
+  Luego haciendo clic en "Modrinth" a la izquierda. 
+  
+  ### Paso 3
+  Luego buscas **SpainRP** y le das a **OK**.
+  
+  </Steps>
+  ![MultiMC](https://docs.modrinth.com/assets/images/multimc-cf2ec668a27142c79cbe3acf922da593.png)
+  > Si desea insertar una URL directamente, puede hacerlo seleccionando "Importar desde zip" en lugar de "Modrinth".
+  
+  </Tab>
+
+  <Tab>
+  Este apartado cubre cualquier launcher como el official que no tiene soporte para modpacks.
+
+  <Callout type="warning" emoji="⚠️">
+  Recuerda que necesitas haber instalado [fabric](https://fabricmc.net/) para la version **1.20.1**
+  </Callout>
+  <Steps>
+  ### Descarga el modpack: 
+  Ve a la página de Modrinth donde se encuentra el modpack que deseas importar. Busca el botón de descarga y haz clic para descargar el archivo ZIP del modpack a tu computadora.
+
+  ### Crea una nueva instancia en el lanzador de Minecraft: 
+  Abre tu lanzador de Minecraft y ve a la sección de "Instancias" o "Instalaciones". Haz clic en el botón "Crear nueva instancia" o "Agregar nueva instalación" para crear una nueva instancia de Minecraft en la que importarás el modpack.
+
+  ### Selecciona la versión correcta de Minecraft: 
+  En la configuración de la nueva instancia, asegúrate de seleccionar la versión 1.20.1.
+
+  ### Localiza la carpeta de la instancia: 
+  En la configuración de la instancia, busca la ruta o ubicación de la carpeta donde se encuentra la instancia de Minecraft en tu computadora. Toma nota de esta ubicación, ya que la necesitarás más adelante.
+
+  ### Extrae el contenido del archivo ZIP: 
+  Abre el archivo ZIP que puedes encontrar en [aqui](https://moddermore.net/list/9MbJ3Sc-A7UE). (Pulsa en *Extraer como ZIP*).
+  
+  Extrae todo el contenido del archivo ZIP en una carpeta temporal en tu computadora.
+
+  ### Copia los archivos en la carpeta de la instancia: 
+  Abre la carpeta de la instancia de Minecraft que localizaste en el paso 4. Copia todos los archivos y carpetas que extrajiste del archivo ZIP en la carpeta de la instancia de Minecraft. Asegúrate de sobrescribir cualquier archivo o carpeta existente si se te solicita.
+
+  ### Ejecuta Minecraft: 
+  Una vez que hayas copiado los archivos del modpack en la carpeta de la instancia, cierra el explorador de archivos y regresa al lanzador de Minecraft. Inicia la instancia que acabas de crear y espera a que se cargue Minecraft.
+
+  ### Verifica que el modpack se haya importado correctamente: 
+  Después de cargar Minecraft, verifica que el modpack se haya importado correctamente. Comprueba si los mods y las configuraciones del modpack están presentes y funcionando como se esperaba. Si algo no funciona correctamente, verifica que hayas seguido todos los pasos anteriores correctamente y que estés utilizando la versión adecuada de Minecraft y el modpack.
+  </Steps>
+  </Tab>
+</Tabs>
+

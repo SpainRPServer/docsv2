@@ -1,0 +1,61 @@
+# Guía de facciones 
+## Ver información de la facción
+* Para ver qué facciones existen, escriba `/mf list`.
+* Para ver más información sobre cualquiera de las facciones, escriba `/mf info (nombre de la facción)`.
+* Para saber en qué facción está alguien, escribe `/mf who (nombre del jugador)`.
+
+## Unirse a una facción
+* Si no estás en una facción, no podrás proteger tus cosas de los demás, así que es mejor saber cómo unirte a una.
+* Antes de unirte a una facción, debes ser invitado. Si alguien lo invita, recibirá una alerta en la pantalla y deberá escribir `/mf join (nombre de la facción)` para aceptar.
+
+## Creando una facción
+* Si prefiere liderar una civilización en lugar de unirse a una, escriba `/mf create (nombre de la facción)`.
+* Para invitar a otros a tu facción, escribe `/mf invite (nombre del jugador)`.
+* Para establecer la descripción de tu facción, escribe `/mf desc (descripción)`.
+* Para ver las leyes de tu facción, escribe `/mf laws`.
+* Para agregar una ley, escriba `/mf addlaw (ley)` o `/mf al (ley)`.
+* Para eliminar una ley, escriba `/mf removelaw (número)` o `/mf rl (número)`.
+* Para editar una ley, escriba `/mf editlaw (número) (ley editada)` o `/mf el (número) (ley editada)`.
+
+## Reclamación de tierras
+* Actualmente, solo los propietarios y los oficiales de las facciones pueden reclamar tierras, y solo los propietarios pueden alternar la bandera de autoreclamo.
+* Para ver si se reclama un terreno, escriba `/mf checkclaim` o `/mf cc`.
+* Para reclamar terrenos, escriba `/mf claim`.
+* Para no reclamar tierras, escriba `/mf unclaim`.
+* Para habilitar la reclamación automática, escriba `/mf autoclaim` o `/mf ac`.
+* Para no reclamar todas las tierras, escriba `/mf unclaimall` o `/mf ua`.
+
+## Guerra
+* Los jugadores solo pueden hacerse daño cuando están en guerra o sin facción. Solo los dueños y oficiales de las facciones pueden declarar la guerra o hacer la paz.
+* Para ver con quién estás en guerra, escribe `/mf info`.
+* Para declarar la guerra a una facción, escribe `/mf declarewar (facción)` o `/mf dw (facción)`.
+* Para ofrecer paz a una facción, escribe `/mf makepeace (facción)` o `/mf mp (facción)`. Ambas facciones deberán hacer las paces antes de que se pueda lograr la paz.
+* Para conquistar la tierra de alguien, escribe `/mf claim` en su territorio. Esto solo es posible si estás en guerra y si tienen más tierra que poder.
+
+## Alianzas
+* Las facciones se pueden aliar entre sí. Los aliados no pueden declararse la guerra entre sí. Cuando alguien declara la guerra a una facción, todos los aliados de esa facción le declaran la guerra.
+* Para ver con quién está aliado, escriba `/mf info`.
+* Para solicitar una alianza con otra facción, escribe `/mf aliado (facción)`. Ambas facciones deben solicitar una alianza antes de que se haga una alianza.
+* Para romper una alianza con otra facción, escribe `/mf breakalliance (facción)`.
+
+## Cerraduras
+* Los bloqueos solo funcionan en tierras reclamadas, por lo que si la tierra no se reclama o se conquista, los bloqueos también se eliminarán.
+* Solo puedes cerrar cofres o puertas en este momento.
+* Para bloquear algo, escriba `/mf lock` y haga clic derecho. Escriba `/mf lock` cancel para cancelar esto.
+* Para desbloquear algo, escriba `/mf unlock` y haga clic derecho. Escriba `/mf unlock` cancel para cancelar esto.
+* Para verificar quién tiene acceso a algo, escriba `/mf checkaccess` o `/mf cc` y haga clic derecho. Escriba `/mf checkaccess cancel` o `/mf cc cancel` para cancelar esto.
+* Para otorgar acceso a algo a alguien, escriba `/mf grantaccess (jugador)` o `/mf ga (jugador)` y haga clic derecho. Escriba `/mf grantaccess cancel` o `/mf ga cancel` para cancelar esto.
+* Para revocar el acceso a algo para alguien, escriba `/mf revokeaccess (jugador)` o `/mf ra (jugador)` y haga clic derecho. Escriba `/mf revokeaccess cancel` o `/mf ra cancel` para cancelar esto.
+
+## Vasallos
+* Las facciones pueden ser vasallos de otras facciones.
+* Cuando una facción acepta ser el vasallo de otra, básicamente está jurando lealtad.
+* Si una facción tiene uno o más vasallos, se los considera señores.
+* Los Liejas también pueden ser vasallos.
+* A los señores se les otorga un poder adicional proporcional al poder de sus vasallos. Si un señor cae por debajo del 50 % de su poder acumulativo máximo, ya no recibirá sus bonificaciones de vasallo.
+* Los vasallos no pueden ser declarados en guerra por ninguna facción excepto aquellas con el mismo señorío.
+
+## Puertas
+Puede crear una puerta con el comando `/mf gate create`. Necesitas estar sosteniendo una azada dorada. El comando lo guiará a través del proceso.
+
+Si está atascado, consulte este ejemplo ![ejemplo](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExam5sYzRrYm00dzN1bHFldWR3bnhhcmluaWhnejR2Zm5wMnV4am5mcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0Uw5F5ofxS8rhzACT8/giphy.gif).
