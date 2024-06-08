@@ -1,0 +1,299 @@
+💬 Todos los comandos comienzan con `/factions` (o el atajo `/f`).
+
+⚠️ Solo se puede acceder a algunos comandos bajo ciertas condiciones, como no tener facción para `/factions join`, o ser líder o propietario para `/factions declare`.
+
+## General
+
+<details>
+<summary>/factions create &lt;faction name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Creates a faction with the given name.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: factionless
+
+</details>
+
+<details>
+<summary>/factions join &lt;faction name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Joins a faction with that name given it's open or you're invited.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: factionless
+
+</details>
+
+<details>
+<summary>/factions leave</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Leaves your current faction, given that you're not the current owner.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: in a faction, not the owner
+
+</details>
+
+<details>
+<summary>/factions info [&lt;faction&gt;]</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Displays your/another faction's description, members and power levels.
+
+
+</details>
+
+<details>
+<summary>/factions list</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Displays faction members and power levels for every faction.
+
+</details>
+
+<details>
+<summary>/factions map</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Displays a map in chat of nearby claims.
+
+</details>
+
+<details>
+<summary>/factions disband</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Disbands your current faction, given that you're the owner.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: is owner
+
+</details>
+
+<details>
+<summary>/factions safe</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Opens your faction's safe, if it's enabled within the config.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: in a faction
+
+</details>
+
+### User settings
+
+<details>
+<summary>/factions settings chat [global|faction|focus]</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Changes which chat you're currently sending and receiving from.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ `global` sends to everyone on the server, and receives both `global` and `faction` chats.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ `faction` sends to only your faction members, and receives both `global` and `faction` chats.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ `focus` sends to only your faction members, and receives only your `faction` chat.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Permissions: `factions.settings.chat`
+
+</details>
+
+<details>
+<summary>/factions settings radar</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Toggles displaying the faction of the chunk you're currently standing inside on the hud.
+
+</details>
+
+<details>
+<summary>/factions settings sound [all|warnings|factions|none]</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Changes what type of sounds the mod will play.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ `all` plays all sounds.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ `warnings` only plays warnings sounds (eg. placing a block inside another factions claim).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ `faction` only plays faction event sounds (eg. faction losing power).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ `none` disables all the sounds.
+
+</details>
+
+## Faction Management
+
+### Claiming
+
+❔ Requirements: is commander
+
+<details>
+<summary>/factions claim list</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Lists all your faction claims.
+
+</details>
+
+<details>
+<summary>/factions claim add [&lt;size&gt;] [force]</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Claims the chunk you're standing in, or a radius around it.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ The `size` parameter is limited to a max of 7 (15x15, 225 chunks).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ The `force` parameter will ignore faction power and claim anyway, be careful!
+
+
+</details>
+
+<details>
+<summary>/factions claim remove [&lt;size&gt;|all]</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Removes the claim on the chunk you're standing in, or a radius around it.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ The `size` parameter is limited to a max of 7 (15x15, 225 chunks).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⚠️ The `all` parameter will remove all claims, be careful!
+
+</details>
+
+<details>
+<summary>/factions claim auto</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Toggles automatically claiming every chunk you walk in.
+
+</details>
+
+### Home
+
+<details>
+<summary>/factions home</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Warps you to your designated faction home.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Permissions: `factions.home`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: in a faction
+
+</details>
+
+<details>
+<summary>/factions home set</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Sets your faction home to your current position.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Permissions: `factions.home.set`
+
+</details>
+
+<details>
+<summary>/factions claim access [increase|decrease]</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Change the faction rank needed to break blocks, etc. in that claim.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Permissions: `factions.claim.access`, `factions.claim.access.increase`, `factions.claim.access.decrease`
+
+</details>
+
+### Invite
+
+❔ Requirements: is a commander
+
+<details>
+<summary>/factions invite add &lt;player name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Invites that player to join your faction.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: is a leader
+
+</details>
+
+<details>
+<summary>/factions invite list</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Lists all your faction's outgoing invites.
+
+</details>
+
+<details>
+<summary>/factions invite remove &lt;player name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Removes that player's invite to your faction.
+
+</details>
+
+### Rank/Player Managment
+
+❔ Requirements: is a leader
+
+<details>
+<summary>/factions rank promote &lt;player name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Promotes a player in your faction.
+
+</details>
+
+<details>
+<summary>/factions rank demote &lt;player name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Demotes a player in your faction.
+
+</details>
+
+<details>
+<summary>/factions rank transfer &lt;player name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Transfers the ownership of the faction to another player.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: is the owner
+
+</details>
+
+<details>
+<summary>/factions kick &lt;player name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Kicks a player out of your faction.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: is a leader
+
+</details>
+
+### Faction Settings
+
+❔ Requirements: is a leader
+
+<details>
+<summary>/f modify open &lt;true|false&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Sets your faction to public (true) or invite only (false).
+
+</details>
+
+<details>
+<summary>/f modify description &lt;faction description&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Sets your faction description.
+
+</details>
+
+<details>
+<summary>/f modify color &lt;color&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Sets your faction color.
+
+</details>
+
+<details>
+<summary>/f modify motd &lt;motd&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Sets your faction motd.
+
+</details>
+
+<details>
+<summary>/f modify name &lt;name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Sets your faction name.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: is the owner
+
+</details>
+
+### Relationships
+
+❔ Requirements: is a leader
+
+<details>
+<summary>/f declare ally &lt;faction name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Declares a faction as an ally.
+
+</details>
+
+<details>
+<summary>/f declare neutral &lt;faction name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Declares a faction as neutral.
+
+</details>
+
+<details>
+<summary>/f declare enemy &lt;faction name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Declares a faction as an enemy.
+
+</details>
+
+#### Permissions
+
+<details>
+<summary>/f permissions [add | remove] &lt;permission name&gt; faction &lt;faction name&gt;</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Adds or removes a permission from a faction
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: is a leader
+
+</details>
+
+<details>
+<summary>/f permissions [add | remove] &lt;permission name&gt; guest</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💬 Adds or removes a permission from all guests in your faction
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❔ Requirements: is a leader
+
+</details>

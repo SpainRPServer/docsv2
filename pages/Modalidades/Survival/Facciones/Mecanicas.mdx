@@ -1,0 +1,33 @@
+## ¿Qué son las facciones?
+
+> Haz crecer tu facción, expande tus reclamos y asalta a tus enemigos para obtener sus pedazos y su botín.
+
+Las facciones no es un concepto nuevo y existe desde hace mucho tiempo en algunos servidores de Minecraft muy populares. Nacido para solucionar el antiguo problema en Minecraft del servidor multijugador que sufre sin rumbo como en los servidores Anarchy y anula cualquier combate como en los servidores de reclamo de tierras. Las facciones logran el equilibrio permitiendo a los jugadores construir libremente mientras mantienen elementos PvP competitivos.
+
+Muchas modificaciones de facciones existentes ya no se mantienen, están diseñadas para versiones anteriores de Minecraft y/o usan el inflado cargador de modificaciones de Forge. Este mod de facciones proporciona una experiencia refrescante y moderna de facciones para la última versión de Minecraft.
+
+## ¿Qué es el poder de facción?
+
+Cada facción tiene un nivel de poder máximo (`basePower`) que solo puede aumentar si se unen nuevos miembros a la facción (`memberPower`).
+
+Las facciones perderán poder si un miembro de la facción es asesinado por otros jugadores (`powerDeathPenalty`). Sin embargo, esto no es permanente y su poder se regenerará para cada jugador de la facción ("ticksForPowerReward") hasta su nivel máximo de poder. Morir también restablecerá el contador de regeneración de energía ("ticksForPower") de ese jugador.
+
+El poder máximo de una facción se calcula como `MAX = basePower + (FACTION_MEMBER_COUNT * memberPower)`
+
+## ¿Qué son los reclamos?
+
+Las facciones pueden "reclamar" fragmentos que evitarán que otros jugadores rompan, construyan e interactúen en tu terreno. Los jugadores pueden presionar F3 + G para alternar la visibilidad del borde del fragmento. Cada reclamo requerirá que la facción mantenga una cierta cantidad de poder ("clamWeight").
+
+Si no mantienen este nivel de potencia requerido, sus reclamos quedarán inválidos hasta que su poder se regenere al nivel requerido o eliminen rápidamente los reclamos para que su nivel de potencia requerido caiga por debajo de su nivel de potencia actual. Por ejemplo, si tengo 5 reclamos y el peso del reclamo es 5, entonces mi facción tendrá que mantener un nivel de poder actual de 25.
+
+## ¿Qué son los rangos?
+
+Cada jugador dentro de una facción tiene un rango. De forma predeterminada, cada nuevo jugador es un "Miembro" cuando se une. Su rango puede ser modificado por un líder con el comando [`/f rank`](Comandos#rankplayer-managment). La clasificación de un usuario determina a qué reclamaciones tiene acceso. Por ejemplo, un reclamo con un nivel de acceso de "Commander" solo permitiría a los jugadores con el rango de "Commander" y superior acceder a los bloques en ese fragmento. También hay un rango especial de "Invitado" que puede acceder a fragmentos con un nivel de acceso de "Miembro", sin embargo, no tienen acceso completo. Los niveles de acceso de los invitados se pueden cambiar mediante el comando [`/f permission`](Comandos#permissions).
+
+### Los 5 rangos en orden
+
+1. Owner
+2. Leader
+3. Commander
+4. Member
+5. Guest
